@@ -1,0 +1,21 @@
+﻿@model List<ProductDTO>
+
+@foreach(var product in Model)
+{
+    <table style="width: 100%; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px; text-align: left; background-color: #f2f2f2;">Ürün Adı</th>
+                <th style="border: 1px solid #ddd; padding: 8px; text-align: left; background-color: #f2f2f2;">Fiyat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">@product.ProductName</td>
+                <td style="border: 1px solid #ddd; padding: 8px; text-align: left;">@product.Price</td>
+            </tr>
+        </tbody>
+    </table>
+}
+
+
